@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.example.memory.enums.Roles;
+
+option java_package = "com.example.memory.proto.enums";
+option java_multiple_files = true;
+
+enum Roles {
+  UNKNOWN = 0;
+  USER = 1;
+  ADMIN = 2;
+}

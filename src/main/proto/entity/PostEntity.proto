@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.example.memory.proto;
+
+option java_package = "com.example.memory.proto.entity.PostEntity";
+option java_multiple_files = true;
+
+
+
+message PostEntity {
+  string postId = 1;
+  string userId = 2;
+  string textContent = 3;
+  repeated string mediaUrls = 4;
+  string createdAt = 5;
+}

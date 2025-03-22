@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package com.example.memory.proto;
+
+option java_package = "com.example.memory.proto.entity.UserEntity";
+option java_multiple_files = true;
+
+import "enums/Roles.proto";
+
+message UserEntity {
+  string userId = 1;
+  string username = 2;
+  string firstName = 3;
+  string lastName = 4;
+  string email = 5;
+  string phoneNumber = 6;
+  string password = 7;
+  string profileImage = 8;
+  string coverImage = 9;
+  string description = 10;
+  string dateOfBirth = 11;
+  enums.Roles.Roles role = 12;
+  bool isVerified = 13;
+  bool isBlocked = 14;
+  string created_at = 15;
+  string updated_at = 16;
+}
